@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="container">
+
         <!-- Navigation -->
         <div id="navigation" class="navigation hidden">
             <div>
@@ -47,14 +48,16 @@
             </table>
         </div>
 
-        <!-- Add/Edit Employee Form -->
+        <!-- Add / Edit Employee -->
         <div id="employee-form-page" class="employee-form hidden">
             <h2 id="form-title">Add Employee</h2>
             <form id="employee-form">
                 <input type="hidden" id="employee-id">
+
                 <input type="text" id="first-name" placeholder="First Name" required>
                 <input type="text" id="last-name" placeholder="Last Name" required>
                 <input type="email" id="email" placeholder="Email" required>
+
                 <select id="department" required>
                     <option value="">Select Department</option>
                     <option value="HR">HR</option>
@@ -62,18 +65,22 @@
                     <option value="Finance">Finance</option>
                     <option value="Marketing">Marketing</option>
                 </select>
+
                 <input type="number" id="salary" placeholder="Salary" required>
                 <input type="date" id="hire-date" required>
-                <button type="submit" id="save-employee-btn">Save Employee</button>
+
+                <button type="submit" id="save-employee-btn">
+                    Save Employee
+                </button>
             </form>
         </div>
+
     </div>
 
-    <!-- JavaScript Files -->
+    <!-- JavaScript Files (CORRECT ORDER) -->
     <script src="employeeauth.js"></script>
     <script src="employeelist.js"></script>
-    <script src="employee.js"></script>
     <script src="addemployee.js"></script>
-</body>
 
+</body>
 </html>
